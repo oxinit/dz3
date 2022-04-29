@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Local" thread-count="3" verbose="2" parallel="tests">
+    <parameter name="prop1" value="Lenovo"/>
+    <parameter name="prop2" value="1000000"/>
+    <test name="BasketTest">
+        <parameter name="prop1" value="Laptop"/>
+        <parameter name="prop2" value="1000000"/>
+        <classes>
+            <class name="PageObjectTests.BasketTest"/>
+        </classes>
+    </test>
+    <test name="BasketTest2" >
+        <parameter name="prop1" value="HP"/>
+        <parameter name="prop2" value="500000"/>
+        <classes>
+            <class name="PageObjectTests.BasketTest"/>
+        </classes>
+    </test>
+</suite>
